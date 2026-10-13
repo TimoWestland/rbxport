@@ -50,6 +50,7 @@ import {
   OVERDRAW,
   scrollOffset,
   snapOffset,
+  playheadWidth,
   pressCue,
   releaseCue,
   beatCountText,
@@ -1110,13 +1111,22 @@ export const Player = memo(function Player({
    * the deck only updates its canvas anchor when the buffered slice runs out.
    */
   useEffect(() => {
+    // Both heads in whole device pixels, at their width and their place: a
+    // line straddling a pixel boundary is blended at partial colour into
+    // the waveform under it, where rekordbox paints it solid (#393).
+    const ratio = globalThis.devicePixelRatio;
+    const headWidth = `${playheadWidth(ratio)}px`;
     const x = (headPercent() / 100) * detail.width;
-    if (detailHead.current) detailHead.current.style.transform = `translateX(${x}px)`;
+    if (detailHead.current) {
+      detailHead.current.style.width = headWidth;
+      detailHead.current.style.transform = `translateX(${snapOffset(x, ratio)}px)`;
+    }
+    if (overviewHead.current) overviewHead.current.style.width = headWidth;
     if (barsLabel.current) barsLabel.current.style.transform = `translateX(${x}px)`;
     const apply = (seconds: number) => {
       const at = total > 0 ? Math.min(seconds / total, 1) : 0;
       if (overviewHead.current) {
-        overviewHead.current.style.transform = `translateX(${Math.max(0, at) * overview.width}px)`;
+        overviewHead.current.style.transform = `translateX(${snapOffset(Math.max(0, at) * overview.width, ratio)}px)`;
       }
       if (scrubFill.current) scrubFill.current.style.transform = `scaleX(${Math.max(0, at)})`;
       // The detail head does not move at all: the layer under it does, by a
