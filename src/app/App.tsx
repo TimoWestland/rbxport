@@ -1659,11 +1659,16 @@ function AppBody() {
   // Playlist › Sort Items (0x500d) from a key or the menu bar: the folder
   // selected in the tree, as rekordbox's command acts on the tree's
   // selection.
+  // rekordbox runs the menu-bar and key command through the same handler as
+  // the tree's menu (`TreeViewer::performCommand` @0x10157f264 ->
+  // `treeMessageSortItem`), so it refuses over a searched tree as well.
+  const treeSearching = useRef(false);
+  const setTreeSearching = useCallback((searching: boolean) => { treeSearching.current = searching; }, []);
   useCommands({
     sortItems: () => {
       const node = selectedNode;
       if (node?.kind !== "folder" && node?.kind !== "collection") return false;
-      sortItems(node);
+      sortItems(node, treeSearching.current);
       return true;
     },
   });
@@ -3168,6 +3173,7 @@ function AppBody() {
           onAddArtwork={addPlaylistArtwork}
           onAddToShortcut={addToShortcut}
           onSortItems={sortItems}
+          onSearchingChange={setTreeSearching}
           railShortcuts={railShortcuts}
           onOpenShortcut={openShortcut}
           onDeleteShortcut={deleteShortcut}
