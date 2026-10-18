@@ -1761,5 +1761,8 @@
   "Do you want to reset all coloring of played tracks?": "Do you want to reset all coloring of played tracks?",
   "Playback time setting": "Playback time setting",
   "The length of time before a track is added to Histories": "The length of time before a track is added to Histories",
-  "seconds": "초"
+  "seconds": "초",
+  "Copied {count} music file to {folder}.": "음악 파일 {count}개를 {folder}에 복사했습니다.",
+  "Copied {count} music files to {folder}.": "음악 파일 {count}개를 {folder}에 복사했습니다.",
+  "That folder could not be found.": "해당 폴더를 찾을 수 없습니다."
 }

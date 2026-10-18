@@ -1760,5 +1760,8 @@
   "Do you want to reset all coloring of played tracks?": "Do you want to reset all coloring of played tracks?",
   "Playback time setting": "Instelling afspeeltijd",
   "The length of time before a track is added to Histories": "De tijdsduur voordat een muziekstuk wordt toegevoegd aan Histories",
-  "seconds": "seconden"
+  "seconds": "seconden",
+  "Copied {count} music file to {folder}.": "{count} muziekbestand gekopieerd naar {folder}.",
+  "Copied {count} music files to {folder}.": "{count} muziekbestanden gekopieerd naar {folder}.",
+  "That folder could not be found.": "Die map kon niet worden gevonden."
 }

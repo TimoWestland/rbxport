@@ -1762,5 +1762,8 @@
   "Do you want to reset all coloring of played tracks?": "Do you want to reset all coloring of played tracks?",
   "Playback time setting": "Playback time setting",
   "The length of time before a track is added to Histories": "The length of time before a track is added to Histories",
-  "seconds": "saniyeler"
+  "seconds": "saniyeler",
+  "Copied {count} music file to {folder}.": "{count} müzik dosyası {folder} klasörüne kopyalandı.",
+  "Copied {count} music files to {folder}.": "{count} müzik dosyası {folder} klasörüne kopyalandı.",
+  "That folder could not be found.": "Bu klasör bulunamadı."
 }

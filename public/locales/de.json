@@ -1760,5 +1760,8 @@
   "Do you want to reset all coloring of played tracks?": "Do you want to reset all coloring of played tracks?",
   "Playback time setting": "Wiedergabezeit-Einstellung",
   "The length of time before a track is added to Histories": "Die Zeitdauer, bevor ein Track zu Histories hinzugefügt wird",
-  "seconds": "Sekunden"
+  "seconds": "Sekunden",
+  "Copied {count} music file to {folder}.": "{count} Musikdatei nach {folder} kopiert.",
+  "Copied {count} music files to {folder}.": "{count} Musikdateien nach {folder} kopiert.",
+  "That folder could not be found.": "Dieser Ordner konnte nicht gefunden werden."
 }
