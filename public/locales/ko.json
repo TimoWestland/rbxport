@@ -1761,5 +1761,8 @@
   "Do you want to reset all coloring of played tracks?": "Do you want to reset all coloring of played tracks?",
   "Playback time setting": "Playback time setting",
   "The length of time before a track is added to Histories": "The length of time before a track is added to Histories",
-  "seconds": "초"
+  "seconds": "초",
+  "Show the upper part of the artwork.": "아트워크의 윗부분 표시.",
+  "Show the entire artwork.": "전체 아트워크 표시.",
+  "--s-row-height": "--s-row-height"
 }

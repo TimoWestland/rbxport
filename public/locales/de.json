@@ -1760,5 +1760,8 @@
   "Do you want to reset all coloring of played tracks?": "Do you want to reset all coloring of played tracks?",
   "Playback time setting": "Wiedergabezeit-Einstellung",
   "The length of time before a track is added to Histories": "Die Zeitdauer, bevor ein Track zu Histories hinzugefügt wird",
-  "seconds": "Sekunden"
+  "seconds": "Sekunden",
+  "Show the upper part of the artwork.": "Oberen Teil des Artworks anzeigen",
+  "Show the entire artwork.": "Gesamtes Artwork anzeigen",
+  "--s-row-height": "--s-row-height"
 }

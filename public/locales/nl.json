@@ -1760,5 +1760,8 @@
   "Do you want to reset all coloring of played tracks?": "Do you want to reset all coloring of played tracks?",
   "Playback time setting": "Instelling afspeeltijd",
   "The length of time before a track is added to Histories": "De tijdsduur voordat een muziekstuk wordt toegevoegd aan Histories",
-  "seconds": "seconden"
+  "seconds": "seconden",
+  "Show the upper part of the artwork.": "Bovenste deel van illustratie tonen",
+  "Show the entire artwork.": "Gehele illustratie tonen",
+  "--s-row-height": "--s-row-height"
 }
